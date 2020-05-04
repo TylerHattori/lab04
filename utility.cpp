@@ -29,10 +29,7 @@ bool isPrime(int x) {
     {
         if (i*j == x)
           return false;
-        
-        if (i*j > x)
-          continue;
     }
   }
-  return true;
+  return false;
 }
