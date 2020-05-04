@@ -22,9 +22,11 @@ bool isEven(int x) {
 }
 bool isPrime(int x) { 
   if (x < 2)
+  {
     return false;
+  }
   else
-    {
+  {
       for (int i = 2; i < x; i++)
       {
         for (int j = 2; j < x; j++)
@@ -33,6 +35,6 @@ bool isPrime(int x) {
               return false;
         }
       }
-      return true;
-    }
+    return true;
+  }
 }

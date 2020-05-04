@@ -32,10 +32,6 @@ int main() {
   assertEquals(true,isPrime(1373),"isPrime(1373)");
   assertEquals(false,isPrime(64507),"isPrime(64507)");
   assertEquals(true,isPrime(69997),"isPrime(69997)");
-
-  // Note that negative numbers are, by definition,
-  // not Prime.  http://mathforum.org/library/drmath/view/55940.html
-  // Same for 0 and 1
   
   assertEquals(false,isPrime(-55),"isPrime(-55)");
   assertEquals(false,isPrime(-80),"isPrime(-80)");
