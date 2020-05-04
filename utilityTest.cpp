@@ -28,8 +28,6 @@ int main() {
   assertEquals(false,isPrime(861),"isPrime(861)");
   assertEquals(true,isPrime(863),"isPrime(863)");
 					 
-  assertEquals(false,isPrime(1337),"isPrime(1337)");
-  assertEquals(true,isPrime(1373),"isPrime(1373)");
   assertEquals(false,isPrime(64507),"isPrime(64507)");
   assertEquals(true,isPrime(69997),"isPrime(69997)");
   
@@ -37,6 +35,10 @@ int main() {
   assertEquals(false,isPrime(-80),"isPrime(-80)");
   assertEquals(false,isPrime(0),"isPrime(0)");
   assertEquals(false,isPrime(1),"isPrime(1)");
+
+  
+  assertEquals(false,isPrime(1337),"isPrime(1337)");
+  assertEquals(true,isPrime(1373),"isPrime(1373)");
   
   return 0;
 }
