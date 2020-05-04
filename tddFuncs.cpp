@@ -17,6 +17,19 @@ void assertEquals(std::string expected,
   }
 }
 
+void assertEquals(bool expected, 
+		  bool actual, 
+		  std::string message="") {
+  if (expected=actual) {
+    cout << "PASSED: " << message << endl;;
+  } else {
+    cout << "   FAILED: " << message << endl 
+	 << "   Expected:[\n" 
+	 << expected << "] actual = [\n" 
+	 << actual << "]\n" << endl;
+  }
+}
+
 void assertEquals(int expected, 
 		  int actual, 
 		  std::string message="") {
