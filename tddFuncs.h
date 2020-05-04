@@ -11,4 +11,8 @@ void assertEquals(int expected,
 		  int actual, 
 		  std::string message);
 
+void assertEquals(bool expected,
+			bool actual,
+			std::string message);
+
 #endif // TDDFUNCS_H

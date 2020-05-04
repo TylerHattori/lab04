@@ -20,7 +20,7 @@ void assertEquals(std::string expected,
 void assertEquals(bool expected, 
 		  bool actual, 
 		  std::string message="") {
-  if (expected=actual) {
+  if (expected==actual) {
     cout << "PASSED: " << message << endl;;
   } else {
     cout << "   FAILED: " << message << endl 
