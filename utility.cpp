@@ -21,15 +21,18 @@ bool isEven(int x) {
     return false;
 }
 bool isPrime(int x) { 
-  if ( x == 0 || x == 1 || x < 0)
+  if (x < 2)
     return false;
-  for (int i = 0; i < x; i++)
-  {
-    for (int j = 0; j < x; j++)
+  else
     {
-        if (i*j == x)
-          return false;
+      for (int i = 2; i < x; i++)
+      {
+        for (int j = 2; j < x; j++)
+        {
+            if (i*j == x)
+              return false;
+        }
+      }
+      return true;
     }
-  }
-  return false;
 }
